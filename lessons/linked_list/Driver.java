@@ -6,6 +6,6 @@ public class Driver{
   public static void main(String[] args) {
     MyLinkedList myList = new MyLinkedList();
     
-    System.out.println(l);
+    System.out.println(myList);
   }
 }
