@@ -6,6 +6,10 @@
 resize the array
 - All methods should have a complexity of 0(1), except the toString()
 - If your have this arrayDeque ["hello", "my", "dear", "friends!"], the left element (hello) is the start, while the right element (friends!) is the end.
+- Throw an exception NoSuchElementException in methods remove and get methods in deque is empty
+- Throw an exception NullPointerException in methods add if the element you are trying to add is null.
+
+Add (both first and last) will throw: NullPointerException - if the specified element is null (this deque does not permit null elements)
 
 ```
     public class MyDeque<E>{
@@ -41,3 +45,10 @@ resize the array
     }
 ```
 
+Creating a generic array you need to create an array of Object, and then cast it to E. This causes a warning. The following code should solve the problem:
+
+```
+    public class MyDeque(){
+      @SuppressWarnings("unchecked")
+    }
+```
