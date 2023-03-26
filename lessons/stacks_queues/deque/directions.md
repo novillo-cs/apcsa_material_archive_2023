@@ -6,10 +6,14 @@
 resize the array
 - All methods should have a complexity of 0(1), except the toString()
 - If your have this arrayDeque ["hello", "my", "dear", "friends!"], the left element (hello) is the start, while the right element (friends!) is the end.
-- Throw an exception NoSuchElementException in methods remove and get methods in deque is empty
+- Resize the array when you try to add an element to any side side and the array is at capacity. The resize method should double the capacity of the deque and copy the values in the deque over in the correct order.
+- Throw an exception NoSuchElementException in methods remove and get methods in deque is empty.
 - Throw an exception NullPointerException in methods add if the element you are trying to add is null.
 
-Add (both first and last) will throw: NullPointerException - if the specified element is null (this deque does not permit null elements)
+In your Driver, you must create the objects like this:
+MyDeque<Integer> deque = new MyDeque<Integer>(7);
+MyDeque<String> deque = new MyDeque<String>(7);
+  
 
 ```
     public class MyDeque<E>{
@@ -38,15 +42,14 @@ Add (both first and last) will throw: NullPointerException - if the specified el
       public int size(){ }
       
       // Resize the array
-      private resize(){}
+      private void resize(int capacity) {}
       
       // Return the deque as string. Ex.:  "[hello, my, dear, friends!]"
       public String toString(){ }
     }
 ```
 
-Creating a generic array you need to create an array of Object, and then cast it to E. This causes a warning. The following code should solve the problem:
-
+Using a generic array requires that you create an array of Object, and then cast it to E. This causes a warning. Please use the following code to avoid that issue:
 ```
     public class MyDeque(){
       @SuppressWarnings("unchecked")
