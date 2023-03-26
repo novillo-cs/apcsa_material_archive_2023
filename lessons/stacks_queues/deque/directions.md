@@ -23,8 +23,15 @@ MyDeque<String> deque = new MyDeque<String>(7);
       private int start, end;
 
       // Constructors
-      public MyDeque(){  }
-      public MyDeque(int initialCapacity){  }
+      public MyDeque(){ 
+        data = (E[])new Object[ENTER_CAPACITY_HERE];
+        // Initialize other instance variables HERE
+      }
+  
+      public MyDeque(int initialCapacity){ 
+         data = (E[])new Object[ENTER_CAPACITY_HERE];
+        // Initialize other instance variables HERE
+      }
       
       // Add a new value on the indicated side
       public void addFirst(E element){ }
