@@ -49,8 +49,12 @@ MyDeque<String> deque = new MyDeque<String>(7);
       public int size(){ }
       
       // Getters
+  
+      // Return data
       public E[] getData(){ }
+      // Return start
       public int getStart(){ }
+      // Return end
       public int getEnd(){ }
       
       // Resize the array. Double its length (data.length * 2)
