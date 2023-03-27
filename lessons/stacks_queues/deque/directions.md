@@ -11,9 +11,12 @@ resize the array
 - Throw an exception NullPointerException in methods add if the element you are trying to add is null.
 
 In your Driver, you must create the objects like this:
-MyDeque<Integer> deque = new MyDeque<Integer>(7);
-MyDeque<String> deque = new MyDeque<String>(7);
-  
+
+```
+MyDeque<Integer> deque = new MyDeque<Integer>(10);
+MyDeque<String> deque = new MyDeque<String>(10);
+```
+
 
 ```
     public class MyDeque<E>{
