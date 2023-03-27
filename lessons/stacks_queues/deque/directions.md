@@ -28,12 +28,16 @@ In your Driver, you must create the objects like this:
       // Constructors
       public MyDeque(){ 
         data = (E[])new Object[ENTER_CAPACITY_HERE];
-        // Initialize other instance variables HERE
+        size = 0;
+        start = 0;
+        end = 0;
       }
   
       public MyDeque(int initialCapacity){ 
          data = (E[])new Object[ENTER_CAPACITY_HERE];
-        // Initialize other instance variables HERE
+         size = 0;
+         start = 0;
+         end = 0;
       }
       
       // Add a new value on the indicated side
