@@ -48,8 +48,13 @@ MyDeque<String> deque = new MyDeque<String>(7);
       // Return deque size
       public int size(){ }
       
-      // Resize the array
-      private void resize(int capacity) {}
+      // Getters
+      public E[] getData(){ }
+      public int getStart(){ }
+      public int getEnd(){ }
+      
+      // Resize the array. Double its length (data.length * 2)
+      private void resize() {}
       
       // Return the deque as string. Ex.:  "[hello, my, dear, friends!]"
       public String toString(){ }
