@@ -13,8 +13,8 @@ resize the array
 In your Driver, you must create the objects like this:
 
 ```
-MyDeque<Integer> deque = new MyDeque<Integer>(10);
-MyDeque<String> deque = new MyDeque<String>(10);
+    MyDeque<Integer> deque = new MyDeque<Integer>(10);
+    MyDeque<String> deque = new MyDeque<String>(10);
 ```
 
 
