@@ -20,7 +20,7 @@ void draw() {
 
 
 /* Draw squares in your frame
-   Add border to your squares, so it looks like a grid
+   There should be space between squares
    Choose two colors to fill your squares color0, color1
    If the cell in gridColors has the value 0, use the color0 for the corresponding square.
    If the cell in gridColors has the value 1, use the color1 for the corresponding square.
