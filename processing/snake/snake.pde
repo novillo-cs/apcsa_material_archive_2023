@@ -8,6 +8,7 @@
  *     The snake grows when eat food
  *     The speed increases when the snake grows
  *     Food is displayed randomly
+ *     Food and parts of the snake body are squares
  */
 
 // global variables
