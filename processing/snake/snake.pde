@@ -92,6 +92,10 @@ void reset() {
 void keyPressed() {
   // if UP is pressed => dir = new PVector(...)
   // same thing for DOWN, LEFT, RIGHT
+  // UP (0, -1)
+  // DOWN(0, 1)
+  // LEFT(-1,0)
+ // RIGHT(1,0)
   // if '+' is pressed, increase the size of the squares (and recalculate w and h)
   // same thing for '-'
   // when 'm' is pressed, change the mode -> ONLY IF YOU IMPLEMENT BOTH MODES
