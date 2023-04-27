@@ -11,8 +11,8 @@
  */
 
 // global variables
-ArrayList<PVector> snake = new ArrayList<PVector>(); // snake body
-PVector pos; // snake position
+ArrayList<PVector> snake = new ArrayList<PVector>(); // snake body (not included the head)
+PVector pos; // snake position (position of the head)
 StringList mode_list = new StringList(new String[] {"border", "no_border"}); // if you implement both functionalities
 int mode_pos = 1; // mode 1 by default - if hits wall wraps around
 String actual_mode = mode_list.get(mode_pos); // current mode name
@@ -21,10 +21,10 @@ PVector food; // food position
 PVector dir = new PVector(0, 0); // snake direction (up, down, left right)
 
 int size = 40; // snake and food square size
-int w, h; // ???
+int w, h; // how many snakes can be allocated
 
-int spd = 20; // speed
-int len = 4; //
+int spd = 20; // reverse speed (smaller spd will make the snake move faster)
+int len = 4; // snake body
 
 void setup() {
   size(1080, 720);
@@ -43,13 +43,13 @@ void draw() {
   drawSnake();
   drawFood();
   
-  // update snake if frameCount is multiple of spd which is 20
+  // update snake if frameCount is a multiple of spd which is 20 at the begining
   if(frameCount % spd == 0) {
     updateSnake();   
   }
 }
 
-// draw the food item (square)
+// draw the food item (square) which size is tha variable size
 void drawFood() {
   // YOUR CODE HERE
 }
@@ -59,7 +59,7 @@ void newFood() {
   //food = new PVector......
 }
 
-// draw snake, consider the snake size
+// draw snake, consider the snake array size (each square of size size) + square of the current pos
 void drawSnake() {
   /// YOUR CODE HERE
 }
@@ -69,16 +69,15 @@ void updateSnake() {
   
   //Check the size of snake. Remove some items from snake ArrayList if needed
   
-  //Calculate new position of snake
+  //Calculate new position of snake (head)
   
-  //If snake hits food, add +1 to the snake size and create a new food
+  //If snake (head) hits food, add +1 to the snake size and create a new food
   
-  //If snake eat itself, gameover, reset()
+  //If snake (head) eat itself, gameover, reset()
   
   //If mode 'no_border', snake is out of screen, wraps around
   //If mode 'border', when snake hit a border, gameover, reset()
   
-  //// ????
 }
 
 void reset() {
