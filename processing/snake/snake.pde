@@ -97,9 +97,12 @@ void keyPressed() {
   // LEFT(-1,0)
   // RIGHT(1,0)
   
-  // EXTRA FOR STUDENTS WHO FINISH WITH THE REQUIRED TASKS
-  // if '+' is pressed, increase the size of the squares (and recalculate w and h)
-  // same thing for '-'
-  // when 'm' is pressed, change the mode -> ONLY IF YOU IMPLEMENT BOTH MODES
-  // add colors: make the food colorful and when the snake eats the food, it adopts that color
 }
+
+// EXTRA FOR STUDENTS WHO FINISH WITH THE REQUIRED TASKS
+// if '+' is pressed, increase the size of the squares (and recalculate w and h)
+// same thing for '-'
+// when 'm' is pressed, change the mode -> ONLY IF YOU IMPLEMENT BOTH MODES
+// add colors: 
+//     1. make the food colorful and when the snake eats the food, it adopts that color
+//     2. make the backgroud looks like a grid adding colors
