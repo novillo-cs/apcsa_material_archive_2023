@@ -13,9 +13,11 @@
 // global variables
 ArrayList<PVector> snake = new ArrayList<PVector>(); // snake body (not included the head)
 PVector pos; // snake position (position of the head)
+
 StringList mode_list = new StringList(new String[] {"border", "no_border"}); // if you implement both functionalities
 int mode_pos = 1; // mode 1 by default - if hits wall wraps around
 String actual_mode = mode_list.get(mode_pos); // current mode name
+
 PVector food; // food position
 
 PVector dir = new PVector(0, 0); // snake direction (up, down, left right)
