@@ -65,18 +65,18 @@ void drawSnake() {
 }
 
 void updateSnake() {
-  //Add current position to snake ArrayList
+  // Add current position(head) to snake ArrayList
   
-  //Check the size of snake. Remove some items from snake ArrayList if needed
+  // Check the size of snake. Remove some items from snake ArrayList if needed
   
-  //Calculate new position of snake (head)
+  // Calculate new position of snake (head). You must use the direction vector for this calculation
   
-  //If snake (head) hits food, add +1 to the snake size and create a new food
+  // If snake (head) hits food, add +1 to the snake size and create a new food
   
-  //If snake (head) eat itself, gameover, reset()
+  // If snake (head) eat itself, gameover, reset()
   
-  //If mode 'no_border', snake is out of screen, wraps around
-  //If mode 'border', when snake hit a border, gameover, reset()
+  // If mode 'no_border', snake is out of screen, wraps around
+  // If mode 'border', when snake hit a border, gameover, reset()
   
 }
 
@@ -95,8 +95,11 @@ void keyPressed() {
   // UP (0, -1)
   // DOWN(0, 1)
   // LEFT(-1,0)
- // RIGHT(1,0)
+  // RIGHT(1,0)
+  
+  // EXTRA FOR STUDENTS WHO FINISH WITH THE REQUIRED TASKS
   // if '+' is pressed, increase the size of the squares (and recalculate w and h)
   // same thing for '-'
   // when 'm' is pressed, change the mode -> ONLY IF YOU IMPLEMENT BOTH MODES
+  // add colors: make the food colorful and when the snake eats the food, it adopts that color
 }
