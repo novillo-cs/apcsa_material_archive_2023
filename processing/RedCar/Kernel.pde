@@ -13,12 +13,11 @@ public class Kernel {
   *     0-255, then clamp it to that range (< 0 becomes 0, >255 becomes 255)
   */
   color calcNewColor(PImage img, int x, int y) {
-    //Hint: start by always returning black.
-    //This will let you test your apply method right away!
+
 
   }
 
-  /**You must write this method that applies the kernel to the source,
+  /**Apply the kernel to the source,
   *and saves the data to the destination.*/
   void apply(PImage source, PImage destination) {
   }
