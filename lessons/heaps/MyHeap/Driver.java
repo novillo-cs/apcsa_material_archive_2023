@@ -1,7 +1,7 @@
 public class Driver {
 
     public static void main(String[] args) {
-        Heap heap = new Heap(10);
+        MyHeap heap = new MYHeap(10);
 
         // insert more values into heap
         heap.insert(80);
