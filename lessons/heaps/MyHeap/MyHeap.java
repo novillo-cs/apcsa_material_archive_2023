@@ -50,15 +50,18 @@ public class MyHeap {
     }
 
     public int getParent(int index) {
-        return (index - 1) / 2;
+        // return parent index
+	return 0;
     }
 
     public boolean isEmpty() {
-        return size == 0;
+	// Your code here
+        return True;
     }
 
     public int getChild(int index, boolean left) {
-        return 2 * index + (left ? 1 : 2);
+        // Return the index of the child (left or right based on parameter)
+	return 0;
     }
 
 }
