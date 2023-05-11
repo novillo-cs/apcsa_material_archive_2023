@@ -42,11 +42,7 @@ public class MyHeap {
     }
 
     public void printHeap() {
-        for (int i = 0; i < size; i++) {
-            System.out.print(heap[i]);
-            System.out.print(", ");
-        }
-        System.out.println();
+        // Print your heap
     }
 
     public boolean isFull() {
