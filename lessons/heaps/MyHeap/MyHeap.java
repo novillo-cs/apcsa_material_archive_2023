@@ -13,10 +13,13 @@ public class MyHeap {
 
     public int peek() {
         // Return root
+        return 0;
     }
 
     public int delete(int index) {
-	// Delet from heap
+	// Delete from heap
+	// Return deleted value
+	return 0;
 
     }
 
