@@ -1,67 +1,66 @@
 public class MyHeap {
+        private int[] Heap;
+        private int size;
+        private int maxsize;
 
-    private int[] heap;
-    private int size;
-
-    public MyHeap(int capacity) {
-        // Initialize heap
-    }
-
-    public void insert(int value) {
-	// Insert value into heap
-    }
-
-    public int peek() {
-        // Return root
-        return 0;
-    }
-
-    public int delete(int index) {
-	// Delete from heap
-	// Return deleted value
-	return 0;
-
-    }
-
-    private void fixHeapAbove(int index) {
-    	// Fix level above
-    	// Compare newValue with heap[getParent(index)]
-    }
-
-    private void fixHeapBelow(int index, int lastHeapIndex) {
-    	// Fix level below
-    	
-        int childToSwap;
-
-        while (index <= lastHeapIndex) {
-            int leftChild = getChild(index, true);
-            int rightChild = getChild(index, false);
-            
-            // Your code here
+        public MyHeap(int numElements) {
+            // We start our heap from index 1.
+            maxsize = numElements;
+            size = 0;
+            Heap = new int[maxsize + 1];
         }
-    }
 
-    public void printHeap() {
-        // Print your heap
-    }
+        private int parent(int pos) {
+            // RETURN POSTION PARENT
+            return 0;
+        }
 
-    public boolean isFull() {
-        return size == heap.length;
-    }
+        private int leftChild(int pos) {
+            // RETURN POSITION LEFTCHILD
+            return 0 ;
+        }
 
-    public int getParent(int index) {
-        // return parent index
-	return 0;
-    }
+        private int rightChild(int pos) {
+            // RETURN POSITION LEFTCHILD
+            return 0 ;
+        }
 
-    public boolean isEmpty() {
-	// Your code here
-        return True;
-    }
 
-    public int getChild(int index, boolean left) {
-        // Return the index of the child (left or right based on parameter)
-	return 0;
-    }
+        private void swap(int value1, int value2) {
+            // YOUR CODE HERE
+        }
+
+        private void downHeapify(int pos) {
+            if (pos >= (size / 2) && pos <= size)
+                return;
+
+            if (Heap[pos] < Heap[leftChild(pos)] || Heap[pos] < Heap[rightChild(pos)]) {
+
+                // YOUR CODE HERE
+            }
+        }
+        
+        private void heapifyUp(int pos) {
+            int temp = Heap[pos];
+            while(pos>0 && temp > Heap[parent(pos)]){
+                // YOUR CODE HERE
+            }
+            Heap[pos] = temp;
+        }
+
+
+        public void insert(int element) {
+            // YOUR CODE HERE
+
+        }
+
+        public void print() {
+            // YOUR CODE HERE
+        }
+
+        public int deleteRoot() {
+           // YOUR CODE HERE
+            return 0;
+        }
 
 }
