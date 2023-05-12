@@ -4,7 +4,6 @@ public class MyHeap {
         private int maxsize;
 
         public MyHeap(int numElements) {
-            // We start our heap from index 1.
             maxsize = numElements;
             size = 0;
             Heap = new int[maxsize + 1];
@@ -26,7 +25,7 @@ public class MyHeap {
         }
 
 
-        private void swap(int value1, int value2) {
+        private void swap(int idx1, int idx2) {
             // YOUR CODE HERE
         }
 
